@@ -24,7 +24,7 @@ class ClothingRepositoryImpl @Inject constructor(
                     var titleIndex = 0
                     data.clothing.forEachIndexed { index, clothing ->
                         if (index % 5 == 0) {
-                            list.add(index, TitleModel("Group ${titleIndex++}"))
+                            list.add(TitleModel("Group ${titleIndex++}"))
                         }
                         list.add(ClothingModel(
                             productId = clothing.productId,
